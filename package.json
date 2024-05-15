@@ -1,0 +1,41 @@
+{
+  "name": "calendar-sync-monorepo",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "start": "turbo run start",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "storybook": "turbo run storybook",
+    "build": "turbo run build",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx}\"",
+    "test": "turbo run test",
+    "release": "pnpm run build && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.1",
+    "eslint": "^8.57.0",
+    "eslint-config-custom": "workspace:*",
+    "prettier": "^3.2.5",
+    "tsconfig": "workspace:*",
+    "turbo": "^1.13.3"
+  },
+  "engines": {
+    "pnpm": ">=8",
+    "node": ">=20"
+  },
+  "packageManager": "^pnpm@8.12.1",
+  "keywords": [],
+  "author": {
+    "name": "Rahul SriRam",
+    "email": "hi@rahulsriram.dev",
+    "url": "https://rahulsriram.dev"
+  },
+  "license": "MIT",
+  "private": true,
+  "publishConfig": {
+    "access": "restricted"
+  }
+}

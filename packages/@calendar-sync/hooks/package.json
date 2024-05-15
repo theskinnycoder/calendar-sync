@@ -1,0 +1,66 @@
+{
+  "name": "@calendar-sync/hooks",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": {
+    "name": "Rahul SriRam",
+    "email": "hi@rahulsriram.dev",
+    "url": "https://rahulsriram.dev"
+  },
+  "license": "MIT",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "./dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/src/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint \"**/*.{js,jsx,ts,tsx}\" --max-warnings 0",
+    "lint:fix": "eslint \"**/*.{js,jsx,ts,tsx}\" --max-warnings 0 --fix"
+  },
+  "keywords": [
+    "calendar-sync",
+    "react",
+    "vite",
+    "typescript",
+    "hooks"
+  ],
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": false
+    },
+    "react-dom": {
+      "optional": false
+    }
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.2",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react-swc": "^3.6.0",
+    "eslint": "^8.57.0",
+    "vite": "^5.2.11",
+    "vite-plugin-dts": "^3.9.1",
+    "eslint-config-custom": "workspace:*",
+    "tsconfig": "workspace:*",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@calendar-sync/core": "workspace:*"
+  }
+}

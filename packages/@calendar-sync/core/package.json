@@ -1,0 +1,55 @@
+{
+  "name": "@calendar-sync/core",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "./dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/src/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsc -w & vite",
+    "build": "tsc && vite build",
+    "lint": "eslint \"**/*.{js,jsx,ts,tsx}\" --max-warnings 0",
+    "lint:fix": "eslint \"**/*.{js,jsx,ts,tsx}\" --max-warnings 0 --fix"
+  },
+  "keywords": [
+    "calendar-sync",
+    "core"
+  ],
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Rahul SriRam",
+    "email": "hi@rahulsriram.dev",
+    "url": "https://rahulsriram.dev"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "eslint": "^8.57.0",
+    "eslint-config-custom": "workspace:*",
+    "tsconfig": "workspace:*",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11",
+    "vite-plugin-dts": "^3.9.1"
+  },
+  "engines": {
+    "pnpm": ">=8",
+    "node": ">=20"
+  },
+  "packageManager": "^pnpm@8.12.1",
+  "dependencies": {
+    "dayjs": "^1.11.11",
+    "query-string": "^9.0.0"
+  }
+}

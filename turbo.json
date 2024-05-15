@@ -1,0 +1,25 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalEnv": ["NODE_ENV"],
+  "pipeline": {
+    "build": {
+      "outputs": ["build/**", "lib/**", "dist/**"],
+      "dependsOn": ["^build"]
+    },
+    "lint": {},
+    "storybook": {
+      "cache": false,
+      "persistent": true
+    },
+    "lint:fix": {},
+    "start": {
+      "cache": false,
+      "persistent": true
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "test": {}
+  }
+}

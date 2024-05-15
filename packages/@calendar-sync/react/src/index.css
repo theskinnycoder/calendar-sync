@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --calendar-sync-background: 0 0% 100%;
+    --calendar-sync-foreground: 222.2 84% 4.9%;
+
+    --calendar-sync-popover: 0 0% 100%;
+    --calendar-sync-popover-foreground: 222.2 84% 4.9%;
+
+    --calendar-sync-primary: 222.2 47.4% 11.2%;
+    --calendar-sync-primary-foreground: 210 40% 98%;
+
+    --calendar-sync-secondary: 210 40% 96.1%;
+    --calendar-sync-secondary-foreground: 222.2 47.4% 11.2%;
+
+    --calendar-sync-accent: 210 40% 96.1%;
+    --calendar-sync-accent-foreground: 222.2 47.4% 11.2%;
+
+    --calendar-sync-border: 214.3 31.8% 91.4%;
+    --calendar-sync-input: 214.3 31.8% 91.4%;
+    --calendar-sync-ring: 222.2 84% 4.9%;
+
+    --calendar-sync-radius: 0.5rem;
+  }
+
+  .dark {
+    --calendar-sync-background: 222.2 84% 4.9%;
+    --calendar-sync-foreground: 210 40% 98%;
+
+    --calendar-sync-popover: 222.2 84% 4.9%;
+    --calendar-sync-popover-foreground: 210 40% 98%;
+
+    --calendar-sync-primary: 210 40% 98%;
+    --calendar-sync-primary-foreground: 222.2 47.4% 11.2%;
+
+    --calendar-sync-secondary: 217.2 32.6% 17.5%;
+    --calendar-sync-secondary-foreground: 210 40% 98%;
+
+    --calendar-sync-accent: 217.2 32.6% 17.5%;
+    --calendar-sync-accent-foreground: 210 40% 98%;
+
+    --calendar-sync-border: 217.2 32.6% 17.5%;
+    --calendar-sync-input: 217.2 32.6% 17.5%;
+    --calendar-sync-ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
